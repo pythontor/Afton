@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+
+namespace time
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ну здравствуй.");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            string word = ("...........................\r\n...........................\r\n...........................\r\n @@@  .. @@@  .............\r\n @@@  .. @@@  .............\r\n...........................\r\n...____________________....\r\n.....________________......\r\n...........................\r\n...........................\r\n...........................");
+
+            foreach (char letter in word)
+            {
+                Console.Write(letter);
+                Thread.Sleep(5);
+            }
+            Console.ResetColor();
+            Console.ReadLine();
+        }
+    }
+}
